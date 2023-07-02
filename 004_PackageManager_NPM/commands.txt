@@ -1,0 +1,86 @@
+npm --version
+9.5.1
+
+
+If you are running an old version of NPM then it is quite easy to update it to the latest version. Just use the following command from root −
+
+$ sudo npm install npm -g
+
+npm install <Module Name>
+
+npm install express
+
+Now you can use this module in your js file as following −
+
+var express = require('express');
+
+Global vs Local Installation
+
+By default, NPM installs any dependency in the local mode. Here local mode refers to the package 
+installation in node_modules directory lying in the folder where Node application is present. 
+Locally deployed packages are accessible via require() method.
+
+npm install express -g
+
+This will produce a similar result but the module will be installed globally.
+
+Using package.json
+
+package.json is present in the root directory of any Node application/module and is 
+used to define the properties of a package. 
+
+Attributes of Package.json
+name − name of the package
+
+version − version of the package
+
+description − description of the package
+
+homepage − homepage of the package
+
+author − author of the package
+
+contributors − name of the contributors to the package
+
+dependencies − list of dependencies. NPM automatically installs all the dependencies 
+mentioned here in the node_module folder of the package.
+
+repository − repository type and URL of the package
+
+main − entry point of the package
+
+keywords − keywords
+
+Uninstalling a Module
+
+Use the following command to uninstall a Node.js module.
+
+$ npm uninstall express
+
+Once NPM uninstalls the package, you can verify it by looking at the content of 
+/node_modules/ directory or type the following command −
+
+$ npm ls
+
+Updating a Module
+
+Update package.json and change the version of the dependency to be updated and run the following command.
+
+$ npm update express
+
+Search a Module
+
+Search a package name using NPM.
+
+$ npm search express
+
+Create a Module
+
+Creating a module requires package.json to be generated. Let's generate package.json 
+using NPM, which will generate the basic skeleton of the package.json.
+
+$ npm init
+
+$ npm adduser
+
+$ npm publish
