@@ -1,0 +1,16 @@
+Global Objects
+
+The following table provides a list of other objects which we use frequently in our 
+applications. For a more detail, you can refer to the official documentation.
+
+
+1	Console
+Used to print information on stdout and stderr.
+https://www.tutorialspoint.com/nodejs/nodejs_console.htm
+
+2	Process
+
+Used to get information on current process. Provides multiple events related 
+to process activities.
+
+https://www.tutorialspoint.com/nodejs/nodejs_process.htm
